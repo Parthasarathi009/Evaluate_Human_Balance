@@ -1,0 +1,43 @@
+194:C 14 Jan 2021 12:46:34.970 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+194:C 14 Jan 2021 12:46:34.970 # Redis version=6.0.6, bits=64, commit=00000000, modified=0, pid=194, just started
+194:C 14 Jan 2021 12:46:34.970 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 194
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+194:M 14 Jan 2021 12:46:34.974 # Server initialized
+194:M 14 Jan 2021 12:46:34.974 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+194:M 14 Jan 2021 12:46:34.974 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+194:M 14 Jan 2021 12:46:34.975 * Loading RDB produced by version 6.0.6
+194:M 14 Jan 2021 12:46:34.975 * RDB age 14182 seconds
+194:M 14 Jan 2021 12:46:34.975 * RDB memory usage when created 2.01 Mb
+194:M 14 Jan 2021 12:46:34.976 * DB loaded from disk: 0.002 seconds
+194:M 14 Jan 2021 12:46:34.976 * Ready to accept connections
+194:M 14 Jan 2021 12:46:58.406 * Replica 127.0.0.1:32800 asks for synchronization
+194:M 14 Jan 2021 12:46:58.406 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '230791843a1d1e159d1a37d02d130e415d22a033', my replication IDs are 'f48df8bff93c683b676e88e5983431dc3d25f19f' and '0000000000000000000000000000000000000000')
+194:M 14 Jan 2021 12:46:58.406 * Replication backlog created, my new replication IDs are '7ec76c84717718138760c867e43960971bf5d57b' and '0000000000000000000000000000000000000000'
+194:M 14 Jan 2021 12:46:58.406 * Starting BGSAVE for SYNC with target: disk
+194:M 14 Jan 2021 12:46:58.406 * Background saving started by pid 1104
+1104:C 14 Jan 2021 12:46:58.422 * DB saved on disk
+1104:C 14 Jan 2021 12:46:58.422 * RDB: 0 MB of memory used by copy-on-write
+194:M 14 Jan 2021 12:46:58.472 * Background saving terminated with success
+194:M 14 Jan 2021 12:46:58.473 * Synchronization with replica 127.0.0.1:32800 succeeded
+194:M 14 Jan 2021 12:51:59.006 * 10 changes in 300 seconds. Saving...
+194:M 14 Jan 2021 12:51:59.007 * Background saving started by pid 26407
+26407:C 14 Jan 2021 12:51:59.030 * DB saved on disk
+26407:C 14 Jan 2021 12:51:59.030 * RDB: 0 MB of memory used by copy-on-write
+194:M 14 Jan 2021 12:51:59.107 * Background saving terminated with success
