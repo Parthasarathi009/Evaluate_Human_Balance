@@ -1,0 +1,29 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -cp /opt/spark-2.3.4-bin-hadoop2.7/conf/:/opt/spark-2.3.4-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 /opt/spark-2.3.4-bin-hadoop2.7/logs/spark--org.apache.spark.deploy.master.Master-1-b0f0e57aaec2.out
+========================================
+2022-08-16 21:09:41 INFO  Worker:2612 - Started daemon with process name: 1687@b0f0e57aaec2
+2022-08-16 21:09:41 INFO  SignalUtils:54 - Registered signal handler for TERM
+2022-08-16 21:09:41 INFO  SignalUtils:54 - Registered signal handler for HUP
+2022-08-16 21:09:41 INFO  SignalUtils:54 - Registered signal handler for INT
+2022-08-16 21:09:42 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-08-16 21:09:42 INFO  SecurityManager:54 - Changing view acls to: root
+2022-08-16 21:09:42 INFO  SecurityManager:54 - Changing modify acls to: root
+2022-08-16 21:09:42 INFO  SecurityManager:54 - Changing view acls groups to: 
+2022-08-16 21:09:42 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2022-08-16 21:09:42 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2022-08-16 21:09:43 INFO  Utils:54 - Successfully started service 'sparkWorker' on port 37469.
+2022-08-16 21:09:43 ERROR SparkUncaughtExceptionHandler:91 - Uncaught exception in thread Thread[main,5,main]
+org.apache.spark.SparkException: Invalid master URL: spark:///opt/spark-2.3.4-bin-hadoop2.7/logs/spark--org.apache.spark.deploy.master.Master-1-b0f0e57aaec2.out
+	at org.apache.spark.util.Utils$.extractHostPortFromSparkUrl(Utils.scala:2453)
+	at org.apache.spark.rpc.RpcAddress$.fromSparkURL(RpcAddress.scala:47)
+	at org.apache.spark.deploy.worker.Worker$$anonfun$16.apply(Worker.scala:786)
+	at org.apache.spark.deploy.worker.Worker$$anonfun$16.apply(Worker.scala:786)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:186)
+	at org.apache.spark.deploy.worker.Worker$.startRpcEnvAndEndpoint(Worker.scala:786)
+	at org.apache.spark.deploy.worker.Worker$.main(Worker.scala:755)
+	at org.apache.spark.deploy.worker.Worker.main(Worker.scala)
+2022-08-16 21:09:43 INFO  ShutdownHookManager:54 - Shutdown hook called
